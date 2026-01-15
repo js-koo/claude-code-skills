@@ -29,7 +29,7 @@ fi
 if [ -d "$INSTALL_DIR" ]; then
     echo -e "${YELLOW}📦 Existing installation found. Updating...${NC}"
     cd "$INSTALL_DIR"
-    git pull origin main
+    git pull
 else
     echo -e "${GREEN}📥 Downloading...${NC}"
     git clone "$REPO_URL" "$INSTALL_DIR"
