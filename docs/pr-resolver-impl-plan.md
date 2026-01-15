@@ -22,25 +22,35 @@ claude-code-skills/
 │   ├── pr-resolver-spec.md        # 요구사항 정의서
 │   └── pr-resolver-impl-plan.md   # 구현 계획서 (현재 문서)
 └── commands/
-    └── pr-resolver.md             # 메인 스킬 파일
+    ├── pr-resolver.md             # 라우터 (Help/Config 섹션 포함)
+    ├── pr-resolver-en.md          # 메인 플로우 (영어)
+    └── pr-resolver-ko.md          # 메인 플로우 (한국어)
 ```
+
+설정은 `git config --global pr-resolver.*`에 저장됩니다.
 
 ---
 
-## 3. pr-resolver.md 구조
+## 3. 파일별 구조
+
+### pr-resolver.md (라우터)
 
 ```markdown
 ---
 (frontmatter: 메타데이터)
 ---
 
-# 제목
+# Language Detection (git config에서 읽기)
+# Command Routing ($1 인자에 따라 분기)
+# Help Section (en/ko 양쪽 포함)
+# Config Section (설정 표시/변경)
+# Main Flow Routing → 언어별 파일로 위임
+```
 
-## 섹션 1: Default Configuration
-## 섹션 2: Command Routing
-## 섹션 3: Help Section
-## 섹션 4: Config Section
-## 섹션 5: Main Flow
+### pr-resolver-{en,ko}.md (메인 플로우)
+
+```markdown
+# Main Flow
   - Environment Check
   - PR Detection
   - Comment Retrieval
@@ -48,7 +58,7 @@ claude-code-skills/
   - Process Comment
   - Send
   - Repeat
-## 섹션 6: Error Handling
+  - Error Handling
 ```
 
 ---
