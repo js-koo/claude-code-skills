@@ -5,18 +5,19 @@ Claude Code custom commands 모음
 ## 설치
 
 ```bash
-# 클론
-git clone https://github.com/js-koo/claude-code-skills.git ~/.claude-code-skills
-
-# 심링크
-mkdir -p ~/.claude/commands
-ln -s ~/.claude-code-skills/commands/* ~/.claude/commands/
+curl -fsSL https://raw.githubusercontent.com/js-koo/claude-code-skills/main/install.sh | bash
 ```
 
 ## 업데이트
 
 ```bash
 cd ~/.claude-code-skills && git pull
+```
+
+## 삭제
+
+```bash
+~/.claude-code-skills/uninstall.sh
 ```
 
 ## Skills
