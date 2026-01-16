@@ -1,23 +1,23 @@
-# Claude Code Skills
+# Claude Workflows
 
-Claude Code custom commands 모음
+Claude Code workflow 모음 (slash commands)
 
 ## 설치
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/js-koo/claude-code-skills/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/js-koo/claude-workflows/main/install.sh | bash
 ```
 
 ## 업데이트
 
 ```bash
-cd ~/.claude-code-skills && git pull
+cd ~/.claude-workflows && git pull
 ```
 
 ## 삭제
 
 ```bash
-~/.claude-code-skills/uninstall.sh
+~/.claude-workflows/uninstall.sh
 ```
 
 ## Skills

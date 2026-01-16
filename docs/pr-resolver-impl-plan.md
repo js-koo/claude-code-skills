@@ -13,7 +13,7 @@
 ## 2. 파일 구조
 
 ```
-claude-code-skills/
+claude-workflows/
 ├── README.md                      # 설치 가이드
 ├── LICENSE
 ├── install.sh                     # 설치 스크립트
@@ -191,11 +191,11 @@ gh api repos/{owner}/{repo}/pulls/{pr}/comments/{id}/reactions \
 
 ```bash
 # 설치
-curl -fsSL https://raw.githubusercontent.com/js-koo/claude-code-skills/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/js-koo/claude-workflows/main/install.sh | bash
 
 # 삭제
-~/.claude-code-skills/uninstall.sh
+~/.claude-workflows/uninstall.sh
 
 # 업데이트
-cd ~/.claude-code-skills && git pull
+cd ~/.claude-workflows && git pull
 ```

@@ -9,8 +9,8 @@ YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
-REPO_URL="https://github.com/js-koo/claude-code-skills.git"
-INSTALL_DIR="$HOME/.claude-code-skills"
+REPO_URL="https://github.com/js-koo/claude-workflows.git"
+INSTALL_DIR="$HOME/.claude-workflows"
 COMMANDS_DIR="$HOME/.claude/commands"
 
 echo -e "${BLUE}"
